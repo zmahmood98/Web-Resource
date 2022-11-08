@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js" rel="script"></script>
+</head>
+
+<body id="main">
+    
+<!-- <div class="searchbar">
+    <input type="text" placeholder="Search..">
+</div> -->
+
+<button class="tablink" onclick="openPage('firstpage', this, 'lavender')" id="defaultOpen">Page 1</button>
+<button class="tablink" onclick="openPage('secondpage', this, 'lemonchiffon')">Page 2</button>
+<button class="tablink" onclick="openPage('thirdpage', this, 'lightcyan')">Page 3</button>
+<button class="tablink" onclick="openPage('fourthpage', this, 'lavenderblush')">Page 4</button>
+
+<div id="firstpage" class="tabcontent">
+    <div class="pagecontent">
+        <h1>Title</h1>
+    
+        <h2>Contents</h2>
+        <ul>
+            <li id="contentsone">One</li>
+            <li id="contentstwo">Two</li>
+            <li id="contentsthree">Three</li>
+            <li id="contentsfour">Four</li>
+        </ul>
+    
+        <h2 id="one">One</h2>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et ipsum, dicta eveniet consequuntur, quae eos cum, aperiam rem animi fuga non saepe enim exercitationem ipsam. Architecto dolore odio soluta harum!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid natus cum provident est iure, atque ullam iste esse asperiores voluptate vel sed, perspiciatis dolor, vitae perferendis quas repudiandae! Vero, minus.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, quae molestiae facilis vel libero magnam ullam fuga eligendi, perspiciatis delectus dolore? Placeat dolor animi laboriosam autem, veniam doloribus labore blanditiis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro expedita aspernatur tempore libero tenetur debitis excepturi fugit incidunt asperiores blanditiis ullam officia rerum quaerat, cupiditate sed ipsa distinctio perferendis exercitationem.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod totam nihil magni consequatur dolorum non hic id. Fugiat placeat commodi vel ab at nisi corporis consectetur reprehenderit quidem, tempora libero.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem cum placeat eaque, repellat voluptatum, perferendis non aliquid consectetur nostrum sunt minima. Atque, qui dolorem inventore officiis assumenda esse. Unde, vitae.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui ab omnis quod corporis temporibus possimus, dolor, ipsam sapiente asperiores magni nam perferendis deserunt blanditiis facere modi est porro aperiam nemo.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident atque delectus facilis, ipsum mollitia officiis quaerat natus. Odit enim vel soluta a iste. Assumenda dolor, eligendi voluptatibus est voluptas rerum.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum quas quis eligendi nihil optio voluptatibus vero officiis mollitia cupiditate, quae fugiat culpa consequatur tempora accusantium quos velit aspernatur vel sequi.
+        </p>
+    
+        <h2 id="two">Two</h2>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et ipsum, dicta eveniet consequuntur, quae eos cum, aperiam rem animi fuga non saepe enim exercitationem ipsam. Architecto dolore odio soluta harum!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid natus cum provident est iure, atque ullam iste esse asperiores voluptate vel sed, perspiciatis dolor, vitae perferendis quas repudiandae! Vero, minus.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, quae molestiae facilis vel libero magnam ullam fuga eligendi, perspiciatis delectus dolore? Placeat dolor animi laboriosam autem, veniam doloribus labore blanditiis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro expedita aspernatur tempore libero tenetur debitis excepturi fugit incidunt asperiores blanditiis ullam officia rerum quaerat, cupiditate sed ipsa distinctio perferendis exercitationem.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod totam nihil magni consequatur dolorum non hic id. Fugiat placeat commodi vel ab at nisi corporis consectetur reprehenderit quidem, tempora libero.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem cum placeat eaque, repellat voluptatum, perferendis non aliquid consectetur nostrum sunt minima. Atque, qui dolorem inventore officiis assumenda esse. Unde, vitae.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui ab omnis quod corporis temporibus possimus, dolor, ipsam sapiente asperiores magni nam perferendis deserunt blanditiis facere modi est porro aperiam nemo.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident atque delectus facilis, ipsum mollitia officiis quaerat natus. Odit enim vel soluta a iste. Assumenda dolor, eligendi voluptatibus est voluptas rerum.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum quas quis eligendi nihil optio voluptatibus vero officiis mollitia cupiditate, quae fugiat culpa consequatur tempora accusantium quos velit aspernatur vel sequi.
+        </p>
+    
+        <h2 id="three">Three</h2>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et ipsum, dicta eveniet consequuntur, quae eos cum, aperiam rem animi fuga non saepe enim exercitationem ipsam. Architecto dolore odio soluta harum!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid natus cum provident est iure, atque ullam iste esse asperiores voluptate vel sed, perspiciatis dolor, vitae perferendis quas repudiandae! Vero, minus.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, quae molestiae facilis vel libero magnam ullam fuga eligendi, perspiciatis delectus dolore? Placeat dolor animi laboriosam autem, veniam doloribus labore blanditiis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro expedita aspernatur tempore libero tenetur debitis excepturi fugit incidunt asperiores blanditiis ullam officia rerum quaerat, cupiditate sed ipsa distinctio perferendis exercitationem.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod totam nihil magni consequatur dolorum non hic id. Fugiat placeat commodi vel ab at nisi corporis consectetur reprehenderit quidem, tempora libero.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem cum placeat eaque, repellat voluptatum, perferendis non aliquid consectetur nostrum sunt minima. Atque, qui dolorem inventore officiis assumenda esse. Unde, vitae.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui ab omnis quod corporis temporibus possimus, dolor, ipsam sapiente asperiores magni nam perferendis deserunt blanditiis facere modi est porro aperiam nemo.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident atque delectus facilis, ipsum mollitia officiis quaerat natus. Odit enim vel soluta a iste. Assumenda dolor, eligendi voluptatibus est voluptas rerum.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum quas quis eligendi nihil optio voluptatibus vero officiis mollitia cupiditate, quae fugiat culpa consequatur tempora accusantium quos velit aspernatur vel sequi.
+        </p>
+    
+        <h2 id="four">Four</h2>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et ipsum, dicta eveniet consequuntur, quae eos cum, aperiam rem animi fuga non saepe enim exercitationem ipsam. Architecto dolore odio soluta harum!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid natus cum provident est iure, atque ullam iste esse asperiores voluptate vel sed, perspiciatis dolor, vitae perferendis quas repudiandae! Vero, minus.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, quae molestiae facilis vel libero magnam ullam fuga eligendi, perspiciatis delectus dolore? Placeat dolor animi laboriosam autem, veniam doloribus labore blanditiis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro expedita aspernatur tempore libero tenetur debitis excepturi fugit incidunt asperiores blanditiis ullam officia rerum quaerat, cupiditate sed ipsa distinctio perferendis exercitationem.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod totam nihil magni consequatur dolorum non hic id. Fugiat placeat commodi vel ab at nisi corporis consectetur reprehenderit quidem, tempora libero.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem cum placeat eaque, repellat voluptatum, perferendis non aliquid consectetur nostrum sunt minima. Atque, qui dolorem inventore officiis assumenda esse. Unde, vitae.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui ab omnis quod corporis temporibus possimus, dolor, ipsam sapiente asperiores magni nam perferendis deserunt blanditiis facere modi est porro aperiam nemo.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident atque delectus facilis, ipsum mollitia officiis quaerat natus. Odit enim vel soluta a iste. Assumenda dolor, eligendi voluptatibus est voluptas rerum.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum quas quis eligendi nihil optio voluptatibus vero officiis mollitia cupiditate, quae fugiat culpa consequatur tempora accusantium quos velit aspernatur vel sequi.
+        </p>
+    
+        <button id="topbutton" title="Go to top">⯅</button>
+    </div>
+</div>
+
+<div id="secondpage" class="tabcontent">
+    <div class="pagecontent">
+        <h3>Page 2</h3>
+        <p>Content</p>
+    </div>
+</div>
+
+<div id="thirdpage" class="tabcontent">
+    <div class="pagecontent">
+        <h3>Page 3</h3>
+        <p>Content</p>
+    </div>
+</div>
+
+<div id="fourthpage" class="tabcontent">
+    <div class="pagecontent">
+        <h3>Page 4</h3>
+        <p>Content</p>
+    </div>
+</div>
+
+</body>
+</html>
